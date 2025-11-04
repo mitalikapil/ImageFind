@@ -1,0 +1,18 @@
+# Node / build
+node_modules/
+dist/
+build/
+
+# Environment files (do NOT commit secrets)
+.env
+server/.env
+front/.env
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
