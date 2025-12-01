@@ -1,11 +1,16 @@
 version: "3.9"
+
 services:
   backend:
+    container_name: imagefind-backend
     build: ./server
     ports:
       - "5000:5000"
+    env_file:
+      - ./server/.env
 
   frontend:
+    container_name: imagefind-frontend
     build: ./front
     ports:
-      - "80:80"
+      - "3000:80"
