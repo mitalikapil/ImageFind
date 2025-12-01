@@ -6,7 +6,7 @@ const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const cors = require('cors'); 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 // --- Environment validation ---
 // In production we require certain critical environment variables to be present.
