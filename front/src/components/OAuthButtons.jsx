@@ -5,7 +5,7 @@ import '../App.css'
 // (icons can be added later, e.g. react-icons)
 
 const OAuthButtons = () => {
-    const backendUrl = 'http://localhost:5000/auth'; // Base URL for auth routes
+    const backendUrl = `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}/auth`; // Base URL for auth routes
 
     const Button = ({ href, icon, provider, bgColor }) => (
         <a 
